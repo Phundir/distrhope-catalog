@@ -10,6 +10,11 @@ chaque somme de contrôle »).
   python3 scripts/verify.py --full --changed-since ancien.json
                                             téléchargement complet seulement des
                                             entrées nouvelles ou modifiées
+  python3 scripts/verify.py --lenient-unchanged ancien.json
+                                            une URL en échec sur une entrée NON
+                                            modifiée depuis ancien.json n'est
+                                            qu'un avertissement (ISO « rolling »
+                                            remplacée entre deux mises à jour)
   python3 scripts/verify.py --offline       schéma + règles uniquement
 
 Le schéma est validé avec `jsonschema` s'il est installé ; les règles
@@ -128,6 +133,7 @@ def main():
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--only", default="")
     ap.add_argument("--changed-since", default="")
+    ap.add_argument("--lenient-unchanged", default="")
     a = ap.parse_args()
     cat = json.loads(Path(a.catalog).read_text())
     errs = rules(cat) + schema(cat)
@@ -142,9 +148,19 @@ def main():
             print("aucune entrée modifiée", file=sys.stderr)
             sys.exit(1 if errs else 0)
     distros = [d for d in cat["distros"] if not only or d["id"] in only]
+    unchanged: set[str] = set()
+    if a.lenient_unchanged:
+        try:
+            old = {d["id"]: d for d in json.loads(Path(a.lenient_unchanged).read_text())["distros"]}
+        except (OSError, ValueError, KeyError):
+            old = {}
+        unchanged = {d["id"] for d in cat["distros"] if old.get(d["id"]) == d}
     if not a.offline and not errs:
         for d in distros:
             e = check_head(d)
+            if e and d["id"] in unchanged:
+                warns.extend(f"{x} (entrée non modifiée : la mise à jour automatique la rafraîchira)" for x in e)
+                e = []
             if not e and a.full:
                 e = check_full(d)
             print(f"  {'✔' if not e else '✘'} {d['id']}", file=sys.stderr)

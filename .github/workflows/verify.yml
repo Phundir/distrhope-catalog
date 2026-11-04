@@ -8,6 +8,9 @@ on:
     paths: ["catalog.json", "catalog.schema.json", "scripts/**"]
   pull_request:
     paths: ["catalog.json", "catalog.schema.json", "scripts/**"]
+  # Lancement manuel (onglet Actions → « Run workflow ») : sans version
+  # précédente, toutes les ISO sont téléchargées et vérifiées (~135 Go).
+  workflow_dispatch:
 
 jobs:
   verify:
@@ -21,10 +24,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install jsonschema rfc3339-validator
-      - name: Schéma, règles et URLs
-        run: python scripts/verify.py
-      - name: Sommes de contrôle des entrées modifiées (téléchargement complet)
+      - name: Version précédente du catalogue
         run: |
           base="${{ github.event.pull_request.base.sha || github.event.before }}"
           git show "$base:catalog.json" > /tmp/old.json 2>/dev/null || echo '{"distros": []}' > /tmp/old.json
-          python scripts/verify.py --full --changed-since /tmp/old.json
+      # Les ISO « rolling » (Tumbleweed…) disparaissent quand un nouvel
+      # instantané sort : une entrée non modifiée par ce push n'est pas
+      # bloquante (update.yml la rafraîchit) ; une entrée modifiée doit être
+      # parfaite.
+      - name: Schéma, règles et URLs
+        run: python scripts/verify.py --lenient-unchanged /tmp/old.json
+      - name: Sommes de contrôle des entrées modifiées (téléchargement complet)
+        run: python scripts/verify.py --full --changed-since /tmp/old.json

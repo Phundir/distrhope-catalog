@@ -1,12 +1,13 @@
-# Mise à jour quotidienne depuis les sources officielles (les distros
-# « rolling » publient de nouvelles ISO chaque semaine, voire chaque jour).
+# Mise à jour toutes les 6 h depuis les sources officielles : les distros
+# « rolling » publient de nouvelles ISO chaque semaine, voire chaque jour,
+# et certaines (openSUSE Tumbleweed) suppriment aussitôt l'ancienne.
 # Les entrées modifiées sont entièrement téléchargées et vérifiées avant
 # d'être publiées.
 name: Mise à jour du catalogue
 
 on:
   schedule:
-    - cron: "17 4 * * *"
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
