@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://distrhope.example/catalog.schema.json",
+  "title": "Catalogue d'ISO distrhope",
+  "description": "Format du catalog.json lu par distrhope (cahier des charges §6). schema_version 1.",
+  "type": "object",
+  "required": ["schema_version", "updated_at", "distros"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "distros": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/distro" }
+    }
+  },
+  "$defs": {
+    "distro": {
+      "type": "object",
+      "required": ["id", "name", "version", "arch", "iso"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+          "description": "Unique dans le fichier ; une entrée par édition."
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "edition": { "type": "string" },
+        "desktop": { "type": "string" },
+        "wm": { "type": "string" },
+        "arch": {
+          "type": "string",
+          "description": "Seul x86_64 est utilisé en v1 ; les autres entrées sont ignorées."
+        },
+        "profile": {
+          "enum": ["arch-mkinitcpio", "arch-dracut", "fedora", "debian", "opensuse", "void", "nixos"],
+          "description": "Facultatif : sinon détecté après installation depuis /etc/os-release."
+        },
+        "iso": {
+          "type": "object",
+          "required": ["url", "checksum"],
+          "additionalProperties": false,
+          "properties": {
+            "url": { "type": "string", "pattern": "^https://" },
+            "mirrors": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^https://" }
+            },
+            "size_bytes": { "type": "integer", "minimum": 1 },
+            "checksum": {
+              "type": "object",
+              "required": ["algo", "value"],
+              "additionalProperties": false,
+              "properties": {
+                "algo": { "enum": ["sha256", "sha512"] },
+                "value": { "type": "string", "pattern": "^([0-9a-f]{64}|[0-9a-f]{128})$" }
+              }
+            },
+            "signature_url": { "type": "string", "pattern": "^https://" }
+          }
+        },
+        "min_size_gib": { "type": "integer", "minimum": 1, "default": 20 },
+        "recommended_size_gib": { "type": "integer", "minimum": 1, "default": 40 },
+        "release_date": { "type": "string", "format": "date" },
+        "homepage": { "type": "string", "pattern": "^https?://" },
+        "logo_url": { "type": "string", "pattern": "^https://" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "notes": {
+          "type": "string",
+          "description": "Ajout distrhope : conseil affiché avant l'installation (FR)."
+        }
+      }
+    }
+  }
+}

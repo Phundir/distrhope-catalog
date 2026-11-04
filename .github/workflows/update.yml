@@ -1,0 +1,49 @@
+# Mise à jour quotidienne depuis les sources officielles (les distros
+# « rolling » publient de nouvelles ISO chaque semaine, voire chaque jour).
+# Les entrées modifiées sont entièrement téléchargées et vérifiées avant
+# d'être publiées.
+name: Mise à jour du catalogue
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema rfc3339-validator
+      - name: Générer
+        run: |
+          cp catalog.json /tmp/old.json
+          python scripts/generate.py || echo "::warning::certaines sources ont échoué (anciennes entrées conservées)"
+      - name: Vérifier (schéma, URLs, sommes des entrées modifiées)
+        run: |
+          python scripts/verify.py
+          python scripts/verify.py --full --changed-since /tmp/old.json
+      - name: Publier
+        run: |
+          # Ne publier que si une ISO a changé (pas pour la seule date).
+          if python - <<'PY'
+          import json, sys
+          a = json.load(open("/tmp/old.json")); b = json.load(open("catalog.json"))
+          sys.exit(0 if a["distros"] != b["distros"] else 1)
+          PY
+          then
+            git config user.name "distrhope-catalog-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add catalog.json
+            git commit -m "catalog: mise à jour automatique $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "Aucune ISO modifiée."
+          fi

@@ -1,0 +1,1067 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-04T17:26:24Z",
+  "distros": [
+    {
+      "id": "archlinux",
+      "name": "Arch Linux",
+      "version": "2026.11.01",
+      "edition": "Minimal",
+      "arch": "x86_64",
+      "profile": "arch-mkinitcpio",
+      "iso": {
+        "url": "https://geo.mirror.pkgbuild.com/iso/2026.11.01/archlinux-2026.11.01-x86_64.iso",
+        "size_bytes": 1317568512,
+        "checksum": {
+          "algo": "sha256",
+          "value": "01bcdcf01af2f7d58f2794899c834770d25c9bfc945bd092b32bb66672a4a216"
+        },
+        "mirrors": [
+          "https://mirrors.kernel.org/archlinux/iso/2026.11.01/archlinux-2026.11.01-x86_64.iso",
+          "https://mirror.rackspace.com/archlinux/iso/2026.11.01/archlinux-2026.11.01-x86_64.iso"
+        ],
+        "signature_url": "https://geo.mirror.pkgbuild.com/iso/2026.11.01/archlinux-2026.11.01-x86_64.iso.sig"
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-11-01",
+      "homepage": "https://archlinux.org",
+      "tags": [
+        "rolling",
+        "minimal"
+      ],
+      "notes": "Pas d'installeur graphique : installation à la main ou avec archinstall dans la VM."
+    },
+    {
+      "id": "cachyos-desktop",
+      "name": "CachyOS",
+      "version": "260809",
+      "edition": "Desktop",
+      "desktop": "KDE Plasma (par défaut, au choix)",
+      "arch": "x86_64",
+      "profile": "arch-mkinitcpio",
+      "iso": {
+        "url": "https://mirror.cachyos.org/ISO/desktop/260809/cachyos-desktop-linux-260809.iso",
+        "size_bytes": 3188850688,
+        "checksum": {
+          "algo": "sha256",
+          "value": "959f6577f45e25ee9fd8c220fd221b08e4ea79412c7315c0f922dd6d86d5e33c"
+        },
+        "mirrors": [
+          "https://cdn77.cachyos.org/ISO/desktop/260809/cachyos-desktop-linux-260809.iso"
+        ],
+        "signature_url": "https://mirror.cachyos.org/ISO/desktop/260809/cachyos-desktop-linux-260809.iso.sig"
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 60,
+      "release_date": "2026-08-09",
+      "homepage": "https://cachyos.org",
+      "tags": [
+        "rolling",
+        "gaming",
+        "performance"
+      ]
+    },
+    {
+      "id": "endeavouros",
+      "name": "EndeavourOS",
+      "version": "2026.08.15",
+      "edition": "Desktop",
+      "desktop": "KDE Plasma (par défaut, au choix)",
+      "arch": "x86_64",
+      "profile": "arch-dracut",
+      "iso": {
+        "url": "https://mirror.alpix.eu/endeavouros/iso/EndeavourOS_Titan-Nova-2026.08.15.iso",
+        "size_bytes": 3898638336,
+        "checksum": {
+          "algo": "sha512",
+          "value": "3f83bd745e9d5d518bdf6fc9a24092fb5347da449a6e109c6572bf999097b8b548c4cf1848fdfb3c7c2823f558c3f5b51a127060d9c5b81b9ad89b4041bee7fa"
+        },
+        "mirrors": [
+          "https://mirrors.gigenet.com/endeavouros/iso/EndeavourOS_Titan-Nova-2026.08.15.iso"
+        ],
+        "signature_url": "https://mirror.alpix.eu/endeavouros/iso/EndeavourOS_Titan-Nova-2026.08.15.iso.sig"
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 60,
+      "release_date": "2026-08-15",
+      "homepage": "https://endeavouros.com",
+      "tags": [
+        "rolling"
+      ]
+    },
+    {
+      "id": "manjaro-kde",
+      "name": "Manjaro",
+      "version": "26.1.0",
+      "edition": "Desktop",
+      "desktop": "KDE Plasma",
+      "arch": "x86_64",
+      "profile": "arch-mkinitcpio",
+      "iso": {
+        "url": "https://download.manjaro.org/kde/26.1.0/manjaro-kde-26.1.0-260812-linux71.iso",
+        "size_bytes": 5534201856,
+        "checksum": {
+          "algo": "sha256",
+          "value": "711b64362abe0b45348dc33bd4a2c654641e069b50ae9ae37c01771da880aa99"
+        },
+        "signature_url": "https://download.manjaro.org/kde/26.1.0/manjaro-kde-26.1.0-260812-linux71.iso.sig"
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-12",
+      "homepage": "https://manjaro.org",
+      "tags": [
+        "rolling",
+        "beginner"
+      ]
+    },
+    {
+      "id": "manjaro-gnome",
+      "name": "Manjaro",
+      "version": "26.1.0",
+      "edition": "Desktop",
+      "desktop": "GNOME",
+      "arch": "x86_64",
+      "profile": "arch-mkinitcpio",
+      "iso": {
+        "url": "https://download.manjaro.org/gnome/26.1.0/manjaro-gnome-26.1.0-260812-linux71.iso",
+        "size_bytes": 5299992576,
+        "checksum": {
+          "algo": "sha256",
+          "value": "b4c94d45c0da1992dfa9c7f3fbfd1bd5ebbdebaaa61f994660e0304357eb029f"
+        },
+        "signature_url": "https://download.manjaro.org/gnome/26.1.0/manjaro-gnome-26.1.0-260812-linux71.iso.sig"
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-12",
+      "homepage": "https://manjaro.org",
+      "tags": [
+        "rolling",
+        "beginner"
+      ]
+    },
+    {
+      "id": "manjaro-xfce",
+      "name": "Manjaro",
+      "version": "26.1.0",
+      "edition": "Desktop",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "arch-mkinitcpio",
+      "iso": {
+        "url": "https://download.manjaro.org/xfce/26.1.0/manjaro-xfce-26.1.0-260812-linux71.iso",
+        "size_bytes": 5142491136,
+        "checksum": {
+          "algo": "sha256",
+          "value": "eb8e3d3f455475c06b508f0115e2247e8764562e36176203a2315552c84afc98"
+        },
+        "signature_url": "https://download.manjaro.org/xfce/26.1.0/manjaro-xfce-26.1.0-260812-linux71.iso.sig"
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-12",
+      "homepage": "https://manjaro.org",
+      "tags": [
+        "rolling",
+        "beginner"
+      ]
+    },
+    {
+      "id": "garuda-dr460nized",
+      "name": "Garuda Linux",
+      "version": "260819",
+      "edition": "Dr460nized",
+      "desktop": "KDE Plasma",
+      "arch": "x86_64",
+      "iso": {
+        "url": "https://iso.builds.garudalinux.org/iso/garuda/dr460nized/260819/garuda-dr460nized-linux-garuda-260819.iso",
+        "size_bytes": 3559471104,
+        "checksum": {
+          "algo": "sha256",
+          "value": "3dac6b04225fe9577ea0143a1c712e13316dff26985c2c4417f8c5e4af77f7f7"
+        }
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 60,
+      "release_date": "2026-08-19",
+      "homepage": "https://garudalinux.org",
+      "tags": [
+        "rolling",
+        "gaming"
+      ]
+    },
+    {
+      "id": "garuda-gnome",
+      "name": "Garuda Linux",
+      "version": "260819",
+      "edition": "Gnome",
+      "desktop": "GNOME",
+      "arch": "x86_64",
+      "iso": {
+        "url": "https://iso.builds.garudalinux.org/iso/garuda/gnome/260819/garuda-gnome-linux-garuda-260819.iso",
+        "size_bytes": 3353329664,
+        "checksum": {
+          "algo": "sha256",
+          "value": "3660d518955494589d1bbedf0832a3ad3372dcbc658bd605c947f033430d2521"
+        }
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 60,
+      "release_date": "2026-08-19",
+      "homepage": "https://garudalinux.org",
+      "tags": [
+        "rolling"
+      ]
+    },
+    {
+      "id": "garuda-hyprland",
+      "name": "Garuda Linux",
+      "version": "260819",
+      "edition": "Hyprland",
+      "wm": "Hyprland",
+      "arch": "x86_64",
+      "iso": {
+        "url": "https://iso.builds.garudalinux.org/iso/garuda/hyprland/260819/garuda-hyprland-linux-garuda-260819.iso",
+        "size_bytes": 3326238720,
+        "checksum": {
+          "algo": "sha256",
+          "value": "d5e18231e8e21ba55b4861d34c850c4d9facdf5d3411c3f8b1dda7afef819d42"
+        }
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 60,
+      "release_date": "2026-08-19",
+      "homepage": "https://garudalinux.org",
+      "tags": [
+        "rolling",
+        "tiling"
+      ]
+    },
+    {
+      "id": "fedora-workstation",
+      "name": "Fedora",
+      "version": "45",
+      "edition": "Workstation",
+      "desktop": "GNOME",
+      "arch": "x86_64",
+      "profile": "fedora",
+      "iso": {
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Workstation/x86_64/iso/Fedora-Workstation-Live-45-1.4.x86_64.iso",
+        "size_bytes": 2925092864,
+        "checksum": {
+          "algo": "sha256",
+          "value": "68338c6bfe4f0d64151f2e47efe9f44a8855ad05b460e56b844fb3fa2c9a3beb"
+        },
+        "mirrors": [
+          "https://dl.fedoraproject.org/pub/fedora/linux/releases/45/Workstation/x86_64/iso/Fedora-Workstation-Live-45-1.4.x86_64.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-10-28",
+      "homepage": "https://fedoraproject.org",
+      "tags": [
+        "stable"
+      ]
+    },
+    {
+      "id": "fedora-kde",
+      "name": "Fedora",
+      "version": "45",
+      "edition": "KDE Plasma Desktop",
+      "desktop": "KDE Plasma",
+      "arch": "x86_64",
+      "profile": "fedora",
+      "iso": {
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/KDE/x86_64/iso/Fedora-KDE-Desktop-Live-45-1.4.x86_64.iso",
+        "size_bytes": 3543603200,
+        "checksum": {
+          "algo": "sha256",
+          "value": "79703d9f3b21a4f7873f2874ec129d6511cb00a08532d8f9b36daacaa96e97a5"
+        },
+        "mirrors": [
+          "https://dl.fedoraproject.org/pub/fedora/linux/releases/45/KDE/x86_64/iso/Fedora-KDE-Desktop-Live-45-1.4.x86_64.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-10-28",
+      "homepage": "https://fedoraproject.org",
+      "tags": [
+        "stable"
+      ]
+    },
+    {
+      "id": "fedora-xfce",
+      "name": "Fedora",
+      "version": "45",
+      "edition": "Spin Xfce",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "fedora",
+      "iso": {
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-Xfce-Live-45-1.4.x86_64.iso",
+        "size_bytes": 3002775552,
+        "checksum": {
+          "algo": "sha256",
+          "value": "66e695a5b1f4203822af220e30152c1e4837d640a3aabd51ac41c6ef2cb9180c"
+        },
+        "mirrors": [
+          "https://dl.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-Xfce-Live-45-1.4.x86_64.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-10-28",
+      "homepage": "https://fedoraproject.org",
+      "tags": [
+        "stable"
+      ]
+    },
+    {
+      "id": "fedora-cinnamon",
+      "name": "Fedora",
+      "version": "45",
+      "edition": "Spin Cinnamon",
+      "desktop": "Cinnamon",
+      "arch": "x86_64",
+      "profile": "fedora",
+      "iso": {
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-Cinnamon-Live-45-1.4.x86_64.iso",
+        "size_bytes": 3339063296,
+        "checksum": {
+          "algo": "sha256",
+          "value": "3916445a58bcc66f82851acbd6a689708c3be5fad7120183e94b864f838ffdd5"
+        },
+        "mirrors": [
+          "https://dl.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-Cinnamon-Live-45-1.4.x86_64.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-10-28",
+      "homepage": "https://fedoraproject.org",
+      "tags": [
+        "stable"
+      ]
+    },
+    {
+      "id": "fedora-cosmic",
+      "name": "Fedora",
+      "version": "45",
+      "edition": "Spin COSMIC",
+      "desktop": "COSMIC",
+      "arch": "x86_64",
+      "profile": "fedora",
+      "iso": {
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-COSMIC-Live-45-1.4.x86_64.iso",
+        "size_bytes": 3256915968,
+        "checksum": {
+          "algo": "sha256",
+          "value": "3b3a9d4537b089b9c5f56e9691b65cf1a32398d38366e58499e45d1f50719f84"
+        },
+        "mirrors": [
+          "https://dl.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-COSMIC-Live-45-1.4.x86_64.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-10-28",
+      "homepage": "https://fedoraproject.org",
+      "tags": [
+        "stable"
+      ]
+    },
+    {
+      "id": "fedora-sway",
+      "name": "Fedora",
+      "version": "45",
+      "edition": "Spin Sway",
+      "wm": "Sway",
+      "arch": "x86_64",
+      "profile": "fedora",
+      "iso": {
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-Sway-Live-45-1.4.x86_64.iso",
+        "size_bytes": 2442932224,
+        "checksum": {
+          "algo": "sha256",
+          "value": "41b26951ea25552ec68bc4c5b730da6d20d0803db31974cffc3b9424ab717351"
+        },
+        "mirrors": [
+          "https://dl.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-Sway-Live-45-1.4.x86_64.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-10-28",
+      "homepage": "https://fedoraproject.org",
+      "tags": [
+        "stable",
+        "tiling"
+      ]
+    },
+    {
+      "id": "fedora-i3",
+      "name": "Fedora",
+      "version": "45",
+      "edition": "Spin i3",
+      "wm": "i3",
+      "arch": "x86_64",
+      "profile": "fedora",
+      "iso": {
+        "url": "https://download.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-i3-Live-45-1.4.x86_64.iso",
+        "size_bytes": 2488913920,
+        "checksum": {
+          "algo": "sha256",
+          "value": "1eb553e22dc4c92f72d7d5ecebd213a80adbe400c5c4713a425f0a0a6e79b0e9"
+        },
+        "mirrors": [
+          "https://dl.fedoraproject.org/pub/fedora/linux/releases/45/Spins/x86_64/iso/Fedora-i3-Live-45-1.4.x86_64.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-10-28",
+      "homepage": "https://fedoraproject.org",
+      "tags": [
+        "stable",
+        "tiling"
+      ]
+    },
+    {
+      "id": "ubuntu-lts",
+      "name": "Ubuntu",
+      "version": "26.04.1",
+      "edition": "Desktop LTS",
+      "desktop": "GNOME",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://releases.ubuntu.com/26.04.1/ubuntu-26.04.1-desktop-amd64.iso",
+        "size_bytes": 6482409472,
+        "checksum": {
+          "algo": "sha256",
+          "value": "601e30fbf5d97759367c632e2c33630665039b7e2158fd068403da3ccf1bda1f"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-26",
+      "homepage": "https://ubuntu.com",
+      "tags": [
+        "lts",
+        "beginner"
+      ]
+    },
+    {
+      "id": "ubuntu",
+      "name": "Ubuntu",
+      "version": "26.10",
+      "edition": "Desktop",
+      "desktop": "GNOME",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso",
+        "size_bytes": 6615449600,
+        "checksum": {
+          "algo": "sha256",
+          "value": "19efc38dde60055b192526bfbba075ac1da23992f1b006ddd41cbd30db0d9b0c"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-10-13",
+      "homepage": "https://ubuntu.com",
+      "tags": [
+        "stable"
+      ]
+    },
+    {
+      "id": "kubuntu-lts",
+      "name": "Kubuntu",
+      "version": "26.04.1",
+      "edition": "Desktop LTS",
+      "desktop": "KDE Plasma",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.ubuntu.com/kubuntu/releases/26.04.1/release/kubuntu-26.04.1-desktop-amd64.iso",
+        "size_bytes": 5072990208,
+        "checksum": {
+          "algo": "sha256",
+          "value": "831e4d4bb85098339ba43d3502cd6619b27e76daf37246a084cd68a6413090b8"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-26",
+      "homepage": "https://kubuntu.org",
+      "tags": [
+        "lts"
+      ]
+    },
+    {
+      "id": "xubuntu-lts",
+      "name": "Xubuntu",
+      "version": "26.04.1",
+      "edition": "Desktop LTS",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.ubuntu.com/xubuntu/releases/26.04.1/release/xubuntu-26.04.1-desktop-amd64.iso",
+        "size_bytes": 5186390016,
+        "checksum": {
+          "algo": "sha256",
+          "value": "0cd5160f72ae6b7a26be7a29248b60cbd579b9e6aa8fbd274e95264da0ade43d"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-26",
+      "homepage": "https://xubuntu.org",
+      "tags": [
+        "lts"
+      ]
+    },
+    {
+      "id": "lubuntu-lts",
+      "name": "Lubuntu",
+      "version": "26.04.1",
+      "edition": "Desktop LTS",
+      "desktop": "LXQt",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.ubuntu.com/lubuntu/releases/26.04.1/release/lubuntu-26.04.1-desktop-amd64.iso",
+        "size_bytes": 3927552000,
+        "checksum": {
+          "algo": "sha256",
+          "value": "a8038585420f2270845549c6f493e0ec98e68d4b2c49571cbe500a4b5fab3062"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-26",
+      "homepage": "https://lubuntu.org",
+      "tags": [
+        "lts"
+      ]
+    },
+    {
+      "id": "ubuntu-budgie-lts",
+      "name": "Ubuntu Budgie",
+      "version": "26.04.1",
+      "edition": "Desktop LTS",
+      "desktop": "Budgie",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.ubuntu.com/ubuntu-budgie/releases/26.04.1/release/ubuntu-budgie-26.04.1-desktop-amd64.iso",
+        "size_bytes": 4127838208,
+        "checksum": {
+          "algo": "sha256",
+          "value": "a0a712266e536246786a4e29f6d0d7328326b9b4b54f746202a8575208c23921"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-08-26",
+      "homepage": "https://ubuntubudgie.org",
+      "tags": [
+        "lts"
+      ]
+    },
+    {
+      "id": "debian-live-gnome",
+      "name": "Debian",
+      "version": "13.7.0",
+      "edition": "Live",
+      "desktop": "GNOME",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.7.0-amd64-gnome.iso",
+        "size_bytes": 3804708864,
+        "checksum": {
+          "algo": "sha256",
+          "value": "e94859a83b305cae5125dc9c6080ced040c59d099ea7381e7f300fd1dba87a17"
+        }
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-09-12",
+      "homepage": "https://www.debian.org",
+      "tags": [
+        "stable"
+      ],
+      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+    },
+    {
+      "id": "debian-live-kde",
+      "name": "Debian",
+      "version": "13.7.0",
+      "edition": "Live",
+      "desktop": "KDE Plasma",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.7.0-amd64-kde.iso",
+        "size_bytes": 4186112000,
+        "checksum": {
+          "algo": "sha256",
+          "value": "37dedc921f50325665c75829597126b3eeb70ff5cd8c511a7230ace09ae939be"
+        }
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-09-12",
+      "homepage": "https://www.debian.org",
+      "tags": [
+        "stable"
+      ],
+      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+    },
+    {
+      "id": "debian-live-xfce",
+      "name": "Debian",
+      "version": "13.7.0",
+      "edition": "Live",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.7.0-amd64-xfce.iso",
+        "size_bytes": 3826974720,
+        "checksum": {
+          "algo": "sha256",
+          "value": "379fcf159fa72a2ed8e3b74f4047df6061bc65adf5217e3d194e41a26fdb85e4"
+        }
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-09-12",
+      "homepage": "https://www.debian.org",
+      "tags": [
+        "stable"
+      ],
+      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+    },
+    {
+      "id": "debian-live-cinnamon",
+      "name": "Debian",
+      "version": "13.7.0",
+      "edition": "Live",
+      "desktop": "Cinnamon",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-13.7.0-amd64-cinnamon.iso",
+        "size_bytes": 4115103744,
+        "checksum": {
+          "algo": "sha256",
+          "value": "678b7c67ca3ab507a457fe1a0495e4030564177ea17387af1c743c969cdc8e6c"
+        }
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-09-12",
+      "homepage": "https://www.debian.org",
+      "tags": [
+        "stable"
+      ],
+      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+    },
+    {
+      "id": "debian-netinst",
+      "name": "Debian",
+      "version": "13.7.0",
+      "edition": "Netinst",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.7.0-amd64-netinst.iso",
+        "size_bytes": 792723456,
+        "checksum": {
+          "algo": "sha256",
+          "value": "a7ef94ac2fb9a7fec454552abd629b7cc9d5155c886165a45649f5ce6167e355"
+        }
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2026-09-12",
+      "homepage": "https://www.debian.org",
+      "tags": [
+        "stable",
+        "minimal"
+      ],
+      "notes": "Installeur Debian ; choisir le partitionnement « tout dans une seule partition » (sans LVM)."
+    },
+    {
+      "id": "linuxmint-cinnamon",
+      "name": "Linux Mint",
+      "version": "22.3",
+      "edition": "Desktop",
+      "desktop": "Cinnamon",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso",
+        "size_bytes": 3091660800,
+        "checksum": {
+          "algo": "sha256",
+          "value": "a081ab202cfda17f6924128dbd2de8b63518ac0531bcfe3f1a1b88097c459bd4"
+        },
+        "mirrors": [
+          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso",
+          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso"
+        ]
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-01-08",
+      "homepage": "https://linuxmint.com",
+      "tags": [
+        "stable",
+        "beginner"
+      ]
+    },
+    {
+      "id": "linuxmint-mate",
+      "name": "Linux Mint",
+      "version": "22.3",
+      "edition": "Desktop",
+      "desktop": "MATE",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-mate-64bit.iso",
+        "size_bytes": 3134275584,
+        "checksum": {
+          "algo": "sha256",
+          "value": "7609294da613b75eea89bb918292125e9f06418a368136fb190466e15bf8c373"
+        },
+        "mirrors": [
+          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-mate-64bit.iso",
+          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-mate-64bit.iso"
+        ]
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-01-08",
+      "homepage": "https://linuxmint.com",
+      "tags": [
+        "stable",
+        "beginner"
+      ]
+    },
+    {
+      "id": "linuxmint-xfce",
+      "name": "Linux Mint",
+      "version": "22.3",
+      "edition": "Desktop",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-xfce-64bit.iso",
+        "size_bytes": 3033710592,
+        "checksum": {
+          "algo": "sha256",
+          "value": "45a835b5dddaf40e84d776549e0b19b3fbd49673b6cc6434ebddbfcd217df776"
+        },
+        "mirrors": [
+          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-xfce-64bit.iso",
+          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-xfce-64bit.iso"
+        ]
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-01-08",
+      "homepage": "https://linuxmint.com",
+      "tags": [
+        "stable",
+        "beginner"
+      ]
+    },
+    {
+      "id": "popos-intel",
+      "name": "Pop!_OS",
+      "version": "24.04-20",
+      "edition": "Intel/AMD",
+      "desktop": "COSMIC",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://iso.pop-os.org/24.04/amd64/intel/20/pop-os_24.04_amd64_intel_20.iso",
+        "size_bytes": 2955067392,
+        "checksum": {
+          "algo": "sha256",
+          "value": "a0ef3842ab710db4f4407cf3499560b59dddbbcd59bee17beab7b0e99dc22b4c"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2025-10-01",
+      "homepage": "https://system76.com/pop",
+      "tags": [
+        "stable",
+        "beginner"
+      ],
+      "notes": "Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1)."
+    },
+    {
+      "id": "popos-nvidia",
+      "name": "Pop!_OS",
+      "version": "24.04-28",
+      "edition": "NVIDIA",
+      "desktop": "COSMIC",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://iso.pop-os.org/24.04/amd64/nvidia/28/pop-os_24.04_amd64_nvidia_28.iso",
+        "size_bytes": 3934945280,
+        "checksum": {
+          "algo": "sha256",
+          "value": "bd867a6b93810769b2189471cfc2d7b6b9c642213c7bf827de511be5f42ce666"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-09-17",
+      "homepage": "https://system76.com/pop",
+      "tags": [
+        "stable",
+        "beginner",
+        "nvidia"
+      ],
+      "notes": "Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1)."
+    },
+    {
+      "id": "kali-installer",
+      "name": "Kali Linux",
+      "version": "2026.3",
+      "edition": "Installer",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://cdimage.kali.org/current/kali-linux-2026.3-installer-amd64.iso",
+        "size_bytes": 5047031808,
+        "checksum": {
+          "algo": "sha256",
+          "value": "db9cbed33edb45727d16911813c2434fcd1419585007884153be22a03b30ec2f"
+        }
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-10-09",
+      "homepage": "https://www.kali.org",
+      "tags": [
+        "security",
+        "rolling"
+      ]
+    },
+    {
+      "id": "opensuse-tumbleweed",
+      "name": "openSUSE Tumbleweed",
+      "version": "20261102",
+      "edition": "DVD (installeur)",
+      "arch": "x86_64",
+      "profile": "opensuse",
+      "iso": {
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261102-Media.iso",
+        "size_bytes": 4634705920,
+        "checksum": {
+          "algo": "sha256",
+          "value": "9f502cc47c1eb44ad9af18d50d3ba85a87b598c956d11ee15e835b301d0e062d"
+        },
+        "mirrors": [
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261102-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261102-Media.iso"
+        ]
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 50,
+      "release_date": "2026-11-02",
+      "homepage": "https://www.opensuse.org",
+      "tags": [
+        "rolling"
+      ],
+      "notes": "Instantané quotidien : l'entrée est régénérée automatiquement."
+    },
+    {
+      "id": "opensuse-tumbleweed-kde",
+      "name": "openSUSE Tumbleweed",
+      "version": "20261102",
+      "edition": "Live",
+      "desktop": "KDE Plasma",
+      "arch": "x86_64",
+      "profile": "opensuse",
+      "iso": {
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261102-Media.iso",
+        "size_bytes": 1279391744,
+        "checksum": {
+          "algo": "sha256",
+          "value": "e6ccd544d1e6933c5d571c7f887e3c5df8756db5230b19e7ba49023c65bf320e"
+        },
+        "mirrors": [
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261102-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261102-Media.iso"
+        ]
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 50,
+      "release_date": "2026-11-02",
+      "homepage": "https://www.opensuse.org",
+      "tags": [
+        "rolling"
+      ],
+      "notes": "Instantané quotidien : l'entrée est régénérée automatiquement."
+    },
+    {
+      "id": "opensuse-tumbleweed-gnome",
+      "name": "openSUSE Tumbleweed",
+      "version": "20261102",
+      "edition": "Live",
+      "desktop": "GNOME",
+      "arch": "x86_64",
+      "profile": "opensuse",
+      "iso": {
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261102-Media.iso",
+        "size_bytes": 1289955328,
+        "checksum": {
+          "algo": "sha256",
+          "value": "1acdfe527c9193b953663e5f6e8e07c022ebe211f5e757e6b18a721cf2f04f8e"
+        },
+        "mirrors": [
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261102-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261102-Media.iso"
+        ]
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 50,
+      "release_date": "2026-11-02",
+      "homepage": "https://www.opensuse.org",
+      "tags": [
+        "rolling"
+      ],
+      "notes": "Instantané quotidien : l'entrée est régénérée automatiquement."
+    },
+    {
+      "id": "opensuse-leap",
+      "name": "openSUSE Leap",
+      "version": "16.0",
+      "edition": "Offline installer",
+      "arch": "x86_64",
+      "profile": "opensuse",
+      "iso": {
+        "url": "https://downloadcontent.opensuse.org/distribution/leap/16.0/offline/Leap-16.0-offline-installer-x86_64-Build178.27.install.iso",
+        "size_bytes": 4538236928,
+        "checksum": {
+          "algo": "sha512",
+          "value": "94411793a1878b3558211c8bbe4f3823c3c5212cc2dd9f9e4532a18be7eddd3be14db5a3bb47a2f36dd957e190ea706cd45af16bce218dfc00f71e64a8469971"
+        },
+        "mirrors": [
+          "https://download.opensuse.org/distribution/leap/16.0/offline/Leap-16.0-offline-installer-x86_64-Build178.27.install.iso",
+          "https://ftp.fau.de/opensuse/distribution/leap/16.0/offline/Leap-16.0-offline-installer-x86_64-Build178.27.install.iso"
+        ]
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 50,
+      "release_date": "2026-06-20",
+      "homepage": "https://www.opensuse.org",
+      "tags": [
+        "stable"
+      ]
+    },
+    {
+      "id": "nixos-graphical",
+      "name": "NixOS",
+      "version": "26.05.13446.7dcdd87373d7",
+      "edition": "Graphical",
+      "desktop": "GNOME / KDE Plasma (au choix)",
+      "arch": "x86_64",
+      "profile": "nixos",
+      "iso": {
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.13446.7dcdd87373d7/nixos-graphical-26.05.13446.7dcdd87373d7-x86_64-linux.iso",
+        "size_bytes": 3888513024,
+        "checksum": {
+          "algo": "sha256",
+          "value": "089ca7f06513d7eb1e83a537946e14e4b725e18c5d9e1a83951aa023c6358f59"
+        }
+      },
+      "min_size_gib": 30,
+      "recommended_size_gib": 60,
+      "release_date": "2026-11-02",
+      "homepage": "https://nixos.org",
+      "tags": [
+        "declarative"
+      ],
+      "notes": "Best-effort (§15) : liste d'apps et migration limitées par la configuration déclarative."
+    },
+    {
+      "id": "void-xfce",
+      "name": "Void Linux",
+      "version": "20250202",
+      "edition": "Live",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "void",
+      "iso": {
+        "url": "https://repo-default.voidlinux.org/live/20250202/void-live-x86_64-20250202-xfce.iso",
+        "size_bytes": 1446789120,
+        "checksum": {
+          "algo": "sha256",
+          "value": "40ff378e6cbc74680b30eb0af0003af0abc750b2589f18d4733f9f30bcc79d5b"
+        },
+        "mirrors": [
+          "https://repo-fi.voidlinux.org/live/20250202/void-live-x86_64-20250202-xfce.iso",
+          "https://mirrors.dotsrc.org/voidlinux/live/20250202/void-live-x86_64-20250202-xfce.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2025-02-02",
+      "homepage": "https://voidlinux.org",
+      "tags": [
+        "rolling",
+        "runit"
+      ],
+      "notes": "Installer avec « void-installer » depuis la session live."
+    },
+    {
+      "id": "void-base",
+      "name": "Void Linux",
+      "version": "20250202",
+      "edition": "Base",
+      "arch": "x86_64",
+      "profile": "void",
+      "iso": {
+        "url": "https://repo-default.voidlinux.org/live/20250202/void-live-x86_64-20250202-base.iso",
+        "size_bytes": 1078804480,
+        "checksum": {
+          "algo": "sha256",
+          "value": "0f7439f500740f62dd18972cae448cec7d8a85032c7eb8f1bf946100d9a92161"
+        },
+        "mirrors": [
+          "https://repo-fi.voidlinux.org/live/20250202/void-live-x86_64-20250202-base.iso",
+          "https://mirrors.dotsrc.org/voidlinux/live/20250202/void-live-x86_64-20250202-base.iso"
+        ]
+      },
+      "min_size_gib": 20,
+      "recommended_size_gib": 40,
+      "release_date": "2025-02-02",
+      "homepage": "https://voidlinux.org",
+      "tags": [
+        "rolling",
+        "runit",
+        "minimal"
+      ],
+      "notes": "Installer avec « void-installer » depuis la session live."
+    }
+  ]
+}

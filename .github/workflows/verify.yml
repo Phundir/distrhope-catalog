@@ -1,0 +1,30 @@
+# §6 règle 5 : à chaque modification, vérifier le schéma, chaque URL, et
+# télécharger entièrement (en flux) chaque ISO nouvelle ou modifiée pour
+# contrôler sa somme.
+name: Vérification du catalogue
+
+on:
+  push:
+    paths: ["catalog.json", "catalog.schema.json", "scripts/**"]
+  pull_request:
+    paths: ["catalog.json", "catalog.schema.json", "scripts/**"]
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema rfc3339-validator
+      - name: Schéma, règles et URLs
+        run: python scripts/verify.py
+      - name: Sommes de contrôle des entrées modifiées (téléchargement complet)
+        run: |
+          base="${{ github.event.pull_request.base.sha || github.event.before }}"
+          git show "$base:catalog.json" > /tmp/old.json 2>/dev/null || echo '{"distros": []}' > /tmp/old.json
+          python scripts/verify.py --full --changed-since /tmp/old.json
