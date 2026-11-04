@@ -30,7 +30,14 @@
         "rolling",
         "minimal"
       ],
-      "notes": "Pas d'installeur graphique : installation à la main ou avec archinstall dans la VM."
+      "notes": {
+        "en": "No graphical installer: install by hand or with archinstall in the VM.",
+        "fr": "Pas d'installeur graphique : installation à la main ou avec archinstall dans la VM.",
+        "es": "Sin instalador gráfico: instale a mano o con archinstall en la VM.",
+        "de": "Kein grafisches Installationsprogramm: Installation von Hand oder mit archinstall in der VM.",
+        "it": "Nessun installer grafico: installa a mano o con archinstall nella VM.",
+        "pt": "Sem instalador gráfico: instale manualmente ou com o archinstall na VM."
+      }
     },
     {
       "id": "cachyos-desktop",
@@ -598,7 +605,14 @@
       "tags": [
         "stable"
       ],
-      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+      "notes": {
+        "en": "Install with the “Install Debian” icon (Calamares) in the live session.",
+        "fr": "Installer via l'icône « Install Debian » (Calamares) de la session live.",
+        "es": "Instale con el icono «Install Debian» (Calamares) de la sesión live.",
+        "de": "Installation über das Symbol „Install Debian“ (Calamares) der Live-Sitzung.",
+        "it": "Installa con l'icona «Install Debian» (Calamares) della sessione live.",
+        "pt": "Instale pelo ícone “Install Debian” (Calamares) da sessão live."
+      }
     },
     {
       "id": "debian-live-kde",
@@ -623,7 +637,14 @@
       "tags": [
         "stable"
       ],
-      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+      "notes": {
+        "en": "Install with the “Install Debian” icon (Calamares) in the live session.",
+        "fr": "Installer via l'icône « Install Debian » (Calamares) de la session live.",
+        "es": "Instale con el icono «Install Debian» (Calamares) de la sesión live.",
+        "de": "Installation über das Symbol „Install Debian“ (Calamares) der Live-Sitzung.",
+        "it": "Installa con l'icona «Install Debian» (Calamares) della sessione live.",
+        "pt": "Instale pelo ícone “Install Debian” (Calamares) da sessão live."
+      }
     },
     {
       "id": "debian-live-xfce",
@@ -648,7 +669,14 @@
       "tags": [
         "stable"
       ],
-      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+      "notes": {
+        "en": "Install with the “Install Debian” icon (Calamares) in the live session.",
+        "fr": "Installer via l'icône « Install Debian » (Calamares) de la session live.",
+        "es": "Instale con el icono «Install Debian» (Calamares) de la sesión live.",
+        "de": "Installation über das Symbol „Install Debian“ (Calamares) der Live-Sitzung.",
+        "it": "Installa con l'icona «Install Debian» (Calamares) della sessione live.",
+        "pt": "Instale pelo ícone “Install Debian” (Calamares) da sessão live."
+      }
     },
     {
       "id": "debian-live-cinnamon",
@@ -673,7 +701,14 @@
       "tags": [
         "stable"
       ],
-      "notes": "Installer via l'icône « Install Debian » (Calamares) de la session live."
+      "notes": {
+        "en": "Install with the “Install Debian” icon (Calamares) in the live session.",
+        "fr": "Installer via l'icône « Install Debian » (Calamares) de la session live.",
+        "es": "Instale con el icono «Install Debian» (Calamares) de la sesión live.",
+        "de": "Installation über das Symbol „Install Debian“ (Calamares) der Live-Sitzung.",
+        "it": "Installa con l'icona «Install Debian» (Calamares) della sessione live.",
+        "pt": "Instale pelo ícone “Install Debian” (Calamares) da sessão live."
+      }
     },
     {
       "id": "debian-netinst",
@@ -698,7 +733,14 @@
         "stable",
         "minimal"
       ],
-      "notes": "Installeur Debian ; choisir le partitionnement « tout dans une seule partition » (sans LVM)."
+      "notes": {
+        "en": "Debian installer: choose the “all files in one partition” layout (no LVM).",
+        "fr": "Installeur Debian ; choisir le partitionnement « tout dans une seule partition » (sans LVM).",
+        "es": "Instalador de Debian: elija el particionado «todo en una sola partición» (sin LVM).",
+        "de": "Debian-Installer: Partitionierung „Alle Dateien auf eine Partition“ wählen (ohne LVM).",
+        "it": "Installer Debian: scegli il partizionamento «tutto in una partizione» (senza LVM).",
+        "pt": "Instalador do Debian: escolha o particionamento “tudo em uma partição” (sem LVM)."
+      }
     },
     {
       "id": "linuxmint-cinnamon",
@@ -811,7 +853,14 @@
         "stable",
         "beginner"
       ],
-      "notes": "Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1)."
+      "notes": {
+        "en": "Untick disk encryption in the installer (LUKS is not supported in v1).",
+        "fr": "Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1).",
+        "es": "Desmarque el cifrado del disco en el instalador (LUKS no se admite en la v1).",
+        "de": "Festplattenverschlüsselung im Installationsprogramm abwählen (LUKS wird in v1 nicht unterstützt).",
+        "it": "Togli la spunta alla cifratura del disco nell'installer (LUKS non è supportato nella v1).",
+        "pt": "Desmarque a criptografia do disco no instalador (LUKS não é suportado na v1)."
+      }
     },
     {
       "id": "popos-nvidia",
@@ -838,7 +887,14 @@
         "beginner",
         "nvidia"
       ],
-      "notes": "Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1)."
+      "notes": {
+        "en": "Untick disk encryption in the installer (LUKS is not supported in v1).",
+        "fr": "Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1).",
+        "es": "Desmarque el cifrado del disco en el instalador (LUKS no se admite en la v1).",
+        "de": "Festplattenverschlüsselung im Installationsprogramm abwählen (LUKS wird in v1 nicht unterstützt).",
+        "it": "Togli la spunta alla cifratura del disco nell'installer (LUKS non è supportato nella v1).",
+        "pt": "Desmarque a criptografia do disco no instalador (LUKS não é suportado na v1)."
+      }
     },
     {
       "id": "kali-installer",
@@ -891,7 +947,14 @@
       "tags": [
         "rolling"
       ],
-      "notes": "Instantané quotidien : l'entrée est régénérée automatiquement."
+      "notes": {
+        "en": "Daily snapshot: this entry is regenerated automatically.",
+        "fr": "Instantané quotidien : l'entrée est régénérée automatiquement.",
+        "es": "Instantánea diaria: esta entrada se regenera automáticamente.",
+        "de": "Täglicher Snapshot: Dieser Eintrag wird automatisch neu erzeugt.",
+        "it": "Snapshot giornaliero: questa voce viene rigenerata automaticamente.",
+        "pt": "Snapshot diário: esta entrada é gerada novamente de forma automática."
+      }
     },
     {
       "id": "opensuse-tumbleweed-kde",
@@ -920,7 +983,14 @@
       "tags": [
         "rolling"
       ],
-      "notes": "Instantané quotidien : l'entrée est régénérée automatiquement."
+      "notes": {
+        "en": "Daily snapshot: this entry is regenerated automatically.",
+        "fr": "Instantané quotidien : l'entrée est régénérée automatiquement.",
+        "es": "Instantánea diaria: esta entrada se regenera automáticamente.",
+        "de": "Täglicher Snapshot: Dieser Eintrag wird automatisch neu erzeugt.",
+        "it": "Snapshot giornaliero: questa voce viene rigenerata automaticamente.",
+        "pt": "Snapshot diário: esta entrada é gerada novamente de forma automática."
+      }
     },
     {
       "id": "opensuse-tumbleweed-gnome",
@@ -949,7 +1019,14 @@
       "tags": [
         "rolling"
       ],
-      "notes": "Instantané quotidien : l'entrée est régénérée automatiquement."
+      "notes": {
+        "en": "Daily snapshot: this entry is regenerated automatically.",
+        "fr": "Instantané quotidien : l'entrée est régénérée automatiquement.",
+        "es": "Instantánea diaria: esta entrada se regenera automáticamente.",
+        "de": "Täglicher Snapshot: Dieser Eintrag wird automatisch neu erzeugt.",
+        "it": "Snapshot giornaliero: questa voce viene rigenerata automaticamente.",
+        "pt": "Snapshot diário: esta entrada é gerada novamente de forma automática."
+      }
     },
     {
       "id": "opensuse-leap",
@@ -1001,7 +1078,14 @@
       "tags": [
         "declarative"
       ],
-      "notes": "Best-effort (§15) : liste d'apps et migration limitées par la configuration déclarative."
+      "notes": {
+        "en": "Best effort: app list and migration are limited by the declarative configuration.",
+        "fr": "Au mieux : liste d'apps et migration limitées par la configuration déclarative.",
+        "es": "Sin garantías: la lista de apps y la migración están limitadas por la configuración declarativa.",
+        "de": "Ohne Gewähr: App-Liste und Migration sind durch die deklarative Konfiguration eingeschränkt.",
+        "it": "Senza garanzie: elenco delle app e migrazione limitati dalla configurazione dichiarativa.",
+        "pt": "Sem garantias: a lista de apps e a migração são limitadas pela configuração declarativa."
+      }
     },
     {
       "id": "void-xfce",
@@ -1031,7 +1115,14 @@
         "rolling",
         "runit"
       ],
-      "notes": "Installer avec « void-installer » depuis la session live."
+      "notes": {
+        "en": "Install with “void-installer” from the live session.",
+        "fr": "Installer avec « void-installer » depuis la session live.",
+        "es": "Instale con «void-installer» desde la sesión live.",
+        "de": "Installation mit „void-installer“ aus der Live-Sitzung.",
+        "it": "Installa con «void-installer» dalla sessione live.",
+        "pt": "Instale com o “void-installer” a partir da sessão live."
+      }
     },
     {
       "id": "void-base",
@@ -1061,7 +1152,14 @@
         "runit",
         "minimal"
       ],
-      "notes": "Installer avec « void-installer » depuis la session live."
+      "notes": {
+        "en": "Install with “void-installer” from the live session.",
+        "fr": "Installer avec « void-installer » depuis la session live.",
+        "es": "Instale con «void-installer» desde la sesión live.",
+        "de": "Installation mit „void-installer“ aus der Live-Sitzung.",
+        "it": "Installa con «void-installer» dalla sessione live.",
+        "pt": "Instale com o “void-installer” a partir da sessão live."
+      }
     }
   ]
 }

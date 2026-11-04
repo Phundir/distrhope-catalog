@@ -68,8 +68,16 @@
         "logo_url": { "type": "string", "pattern": "^https://" },
         "tags": { "type": "array", "items": { "type": "string" } },
         "notes": {
-          "type": "string",
-          "description": "Ajout distrhope : conseil affiché avant l'installation (FR)."
+          "description": "Ajout distrhope : conseil affiché avant l'installation. Texte simple, ou un texte par langue de l'interface (en obligatoire ; fr, es, de, it, pt…).",
+          "oneOf": [
+            { "type": "string" },
+            {
+              "type": "object",
+              "required": ["en"],
+              "additionalProperties": { "type": "string", "minLength": 1 },
+              "propertyNames": { "pattern": "^[a-z]{2}(_[A-Z]{2})?$" }
+            }
+          ]
         }
       }
     }

@@ -85,6 +85,68 @@ def source(fn):
     return fn
 
 
+
+# Notes affichées avant l'installation, une par langue de l'interface
+# (en par défaut ; fr, es, de, it, pt).
+NOTES = {
+    'archinstall': {
+        "en": "No graphical installer: install by hand or with archinstall in the VM.",
+        "fr": "Pas d'installeur graphique : installation à la main ou avec archinstall dans la VM.",
+        "es": "Sin instalador gráfico: instale a mano o con archinstall en la VM.",
+        "de": "Kein grafisches Installationsprogramm: Installation von Hand oder mit archinstall in der VM.",
+        "it": "Nessun installer grafico: installa a mano o con archinstall nella VM.",
+        "pt": "Sem instalador gráfico: instale manualmente ou com o archinstall na VM."
+    },
+    'debian-live': {
+        "en": "Install with the “Install Debian” icon (Calamares) in the live session.",
+        "fr": "Installer via l'icône « Install Debian » (Calamares) de la session live.",
+        "es": "Instale con el icono «Install Debian» (Calamares) de la sesión live.",
+        "de": "Installation über das Symbol „Install Debian“ (Calamares) der Live-Sitzung.",
+        "it": "Installa con l'icona «Install Debian» (Calamares) della sessione live.",
+        "pt": "Instale pelo ícone “Install Debian” (Calamares) da sessão live."
+    },
+    'debian-netinst': {
+        "en": "Debian installer: choose the “all files in one partition” layout (no LVM).",
+        "fr": "Installeur Debian ; choisir le partitionnement « tout dans une seule partition » (sans LVM).",
+        "es": "Instalador de Debian: elija el particionado «todo en una sola partición» (sin LVM).",
+        "de": "Debian-Installer: Partitionierung „Alle Dateien auf eine Partition“ wählen (ohne LVM).",
+        "it": "Installer Debian: scegli il partizionamento «tutto in una partizione» (senza LVM).",
+        "pt": "Instalador do Debian: escolha o particionamento “tudo em uma partição” (sem LVM)."
+    },
+    'no-luks': {
+        "en": "Untick disk encryption in the installer (LUKS is not supported in v1).",
+        "fr": "Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1).",
+        "es": "Desmarque el cifrado del disco en el instalador (LUKS no se admite en la v1).",
+        "de": "Festplattenverschlüsselung im Installationsprogramm abwählen (LUKS wird in v1 nicht unterstützt).",
+        "it": "Togli la spunta alla cifratura del disco nell'installer (LUKS non è supportato nella v1).",
+        "pt": "Desmarque a criptografia do disco no instalador (LUKS não é suportado na v1)."
+    },
+    'daily-snapshot': {
+        "en": "Daily snapshot: this entry is regenerated automatically.",
+        "fr": "Instantané quotidien : l'entrée est régénérée automatiquement.",
+        "es": "Instantánea diaria: esta entrada se regenera automáticamente.",
+        "de": "Täglicher Snapshot: Dieser Eintrag wird automatisch neu erzeugt.",
+        "it": "Snapshot giornaliero: questa voce viene rigenerata automaticamente.",
+        "pt": "Snapshot diário: esta entrada é gerada novamente de forma automática."
+    },
+    'nixos': {
+        "en": "Best effort: app list and migration are limited by the declarative configuration.",
+        "fr": "Au mieux : liste d'apps et migration limitées par la configuration déclarative.",
+        "es": "Sin garantías: la lista de apps y la migración están limitadas por la configuración declarativa.",
+        "de": "Ohne Gewähr: App-Liste und Migration sind durch die deklarative Konfiguration eingeschränkt.",
+        "it": "Senza garanzie: elenco delle app e migrazione limitati dalla configurazione dichiarativa.",
+        "pt": "Sem garantias: a lista de apps e a migração são limitadas pela configuração declarativa."
+    },
+    'void-installer': {
+        "en": "Install with “void-installer” from the live session.",
+        "fr": "Installer avec « void-installer » depuis la session live.",
+        "es": "Instale con «void-installer» desde la sesión live.",
+        "de": "Installation mit „void-installer“ aus der Live-Sitzung.",
+        "it": "Installa con «void-installer» dalla sessione live.",
+        "pt": "Instale com o “void-installer” a partir da sessão live."
+    },
+}
+
 def entry(id, name, version, url, checksum, *, edition=None, desktop=None, wm=None,
           profile=None, mirrors=None, signature_url=None, min_gib=20, rec_gib=40,
           homepage=None, tags=(), notes=None):
@@ -134,7 +196,7 @@ def arch():
         mirrors=[f"https://mirrors.kernel.org/archlinux/{path}", f"https://mirror.rackspace.com/archlinux/{path}"],
         signature_url=f"https://geo.mirror.pkgbuild.com/{path}.sig",
         homepage="https://archlinux.org", tags=["rolling", "minimal"],
-        notes="Pas d'installeur graphique : installation à la main ou avec archinstall dans la VM.",
+        notes=NOTES['archinstall'],
     )
 
 
@@ -288,7 +350,7 @@ def debian():
             f"debian-live-{de}", "Debian", ver, live + n, s[n],
             edition="Live", desktop=desktop, profile="debian",
             homepage="https://www.debian.org", tags=["stable"],
-            notes="Installer via l'icône « Install Debian » (Calamares) de la session live.",
+            notes=NOTES['debian-live'],
         )
     net = "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"
     s = sums(fetch(net + "SHA256SUMS"))
@@ -297,7 +359,7 @@ def debian():
         "debian-netinst", "Debian", n.split("-")[1], net + n, s[n],
         edition="Netinst", profile="debian", homepage="https://www.debian.org",
         tags=["stable", "minimal"],
-        notes="Installeur Debian ; choisir le partitionnement « tout dans une seule partition » (sans LVM).",
+        notes=NOTES['debian-netinst'],
     )
 
 
@@ -325,7 +387,7 @@ def popos():
             f"popos-{chan}", "Pop!_OS", f"{j['version']}-{j['build']}", j["url"], j["sha_sum"].lower(),
             edition=ed, desktop="COSMIC", profile="debian", min_gib=25, rec_gib=50,
             homepage="https://system76.com/pop", tags=["stable", "beginner"] + (["nvidia"] if chan == "nvidia" else []),
-            notes="Décocher le chiffrement du disque dans l'installeur (LUKS non géré en v1).",
+            notes=NOTES['no-luks'],
         )
 
 
@@ -359,7 +421,7 @@ def opensuse_tumbleweed():
             mirrors=[base + name, f"https://ftp.fau.de/opensuse/tumbleweed/iso/{name}"],
             edition="DVD (installeur)" if ed == "DVD" else "Live", desktop=desktop, profile="opensuse",
             homepage="https://www.opensuse.org", tags=["rolling"], min_gib=30, rec_gib=50,
-            notes="Instantané quotidien : l'entrée est régénérée automatiquement.",
+            notes=NOTES['daily-snapshot'],
         )
 
 
@@ -396,7 +458,7 @@ def nixos():
             "nixos-graphical", "NixOS", ver, final, h,
             edition="Graphical", desktop="GNOME / KDE Plasma (au choix)", profile="nixos",
             homepage="https://nixos.org", tags=["declarative"], min_gib=30, rec_gib=60,
-            notes="Best-effort (§15) : liste d'apps et migration limitées par la configuration déclarative.",
+            notes=NOTES['nixos'],
         )
         return
 
@@ -414,7 +476,7 @@ def void():
             mirrors=[f"https://repo-fi.voidlinux.org/live/{date}/{n}",
                      f"https://mirrors.dotsrc.org/voidlinux/live/{date}/{n}"],
             homepage="https://voidlinux.org", tags=["rolling", "runit"] + (["minimal"] if ed == "base" else []),
-            notes="Installer avec « void-installer » depuis la session live.",
+            notes=NOTES['void-installer'],
         )
 
 
