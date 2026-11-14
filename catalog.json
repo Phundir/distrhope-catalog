@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T19:08:00Z",
+  "updated_at": "2026-11-14T01:14:30Z",
   "distros": [
     {
       "id": "archlinux",
@@ -865,22 +865,22 @@
     {
       "id": "popos-nvidia",
       "name": "Pop!_OS",
-      "version": "24.04-28",
+      "version": "24.04-29",
       "edition": "NVIDIA",
       "desktop": "COSMIC",
       "arch": "x86_64",
       "profile": "debian",
       "iso": {
-        "url": "https://iso.pop-os.org/24.04/amd64/nvidia/28/pop-os_24.04_amd64_nvidia_28.iso",
-        "size_bytes": 3934945280,
+        "url": "https://iso.pop-os.org/24.04/amd64/nvidia/29/pop-os_24.04_amd64_nvidia_29.iso",
+        "size_bytes": 3674210304,
         "checksum": {
           "algo": "sha256",
-          "value": "bd867a6b93810769b2189471cfc2d7b6b9c642213c7bf827de511be5f42ce666"
+          "value": "e0e5644c274976f7c66314d6c3d20d5d33f3d3bdf420cd0c7c98b3a4c1d5c214"
         }
       },
       "min_size_gib": 25,
       "recommended_size_gib": 50,
-      "release_date": "2026-09-17",
+      "release_date": "2026-11-13",
       "homepage": "https://system76.com/pop",
       "tags": [
         "stable",
@@ -1058,22 +1058,22 @@
     {
       "id": "nixos-graphical",
       "name": "NixOS",
-      "version": "26.05.13936.ac588ef1c914",
+      "version": "26.05.14234.f1e5c356f35d",
       "edition": "Graphical",
       "desktop": "GNOME / KDE Plasma (au choix)",
       "arch": "x86_64",
       "profile": "nixos",
       "iso": {
-        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.13936.ac588ef1c914/nixos-graphical-26.05.13936.ac588ef1c914-x86_64-linux.iso",
-        "size_bytes": 3888513024,
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.14234.f1e5c356f35d/nixos-graphical-26.05.14234.f1e5c356f35d-x86_64-linux.iso",
+        "size_bytes": 3892314112,
         "checksum": {
           "algo": "sha256",
-          "value": "a41159c20b92ae323f1ac705a6d476b9c197091fe95435585ad34074b3ef55fe"
+          "value": "d398586b303965d1646c0c0926d30d21dc2ae7250845f5d3ed19cad41b398ace"
         }
       },
       "min_size_gib": 30,
       "recommended_size_gib": 60,
-      "release_date": "2026-11-10",
+      "release_date": "2026-11-13",
       "homepage": "https://nixos.org",
       "tags": [
         "declarative"
