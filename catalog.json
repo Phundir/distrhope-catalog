@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T07:30:30Z",
+  "updated_at": "2026-11-19T19:14:06Z",
   "distros": [
     {
       "id": "archlinux",
@@ -743,93 +743,6 @@
       }
     },
     {
-      "id": "linuxmint-cinnamon",
-      "name": "Linux Mint",
-      "version": "22.3",
-      "edition": "Desktop",
-      "desktop": "Cinnamon",
-      "arch": "x86_64",
-      "profile": "debian",
-      "iso": {
-        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso",
-        "size_bytes": 3091660800,
-        "checksum": {
-          "algo": "sha256",
-          "value": "a081ab202cfda17f6924128dbd2de8b63518ac0531bcfe3f1a1b88097c459bd4"
-        },
-        "mirrors": [
-          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso",
-          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso"
-        ]
-      },
-      "min_size_gib": 25,
-      "recommended_size_gib": 50,
-      "release_date": "2026-01-08",
-      "homepage": "https://linuxmint.com",
-      "tags": [
-        "stable",
-        "beginner"
-      ]
-    },
-    {
-      "id": "linuxmint-mate",
-      "name": "Linux Mint",
-      "version": "22.3",
-      "edition": "Desktop",
-      "desktop": "MATE",
-      "arch": "x86_64",
-      "profile": "debian",
-      "iso": {
-        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-mate-64bit.iso",
-        "size_bytes": 3134275584,
-        "checksum": {
-          "algo": "sha256",
-          "value": "7609294da613b75eea89bb918292125e9f06418a368136fb190466e15bf8c373"
-        },
-        "mirrors": [
-          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-mate-64bit.iso",
-          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-mate-64bit.iso"
-        ]
-      },
-      "min_size_gib": 25,
-      "recommended_size_gib": 50,
-      "release_date": "2026-01-08",
-      "homepage": "https://linuxmint.com",
-      "tags": [
-        "stable",
-        "beginner"
-      ]
-    },
-    {
-      "id": "linuxmint-xfce",
-      "name": "Linux Mint",
-      "version": "22.3",
-      "edition": "Desktop",
-      "desktop": "Xfce",
-      "arch": "x86_64",
-      "profile": "debian",
-      "iso": {
-        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-xfce-64bit.iso",
-        "size_bytes": 3033710592,
-        "checksum": {
-          "algo": "sha256",
-          "value": "45a835b5dddaf40e84d776549e0b19b3fbd49673b6cc6434ebddbfcd217df776"
-        },
-        "mirrors": [
-          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-xfce-64bit.iso",
-          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-xfce-64bit.iso"
-        ]
-      },
-      "min_size_gib": 25,
-      "recommended_size_gib": 50,
-      "release_date": "2026-01-08",
-      "homepage": "https://linuxmint.com",
-      "tags": [
-        "stable",
-        "beginner"
-      ]
-    },
-    {
       "id": "popos-intel",
       "name": "Pop!_OS",
       "version": "24.04-20",
@@ -924,20 +837,20 @@
     {
       "id": "opensuse-tumbleweed",
       "name": "openSUSE Tumbleweed",
-      "version": "20261117",
+      "version": "20261118",
       "edition": "DVD (installeur)",
       "arch": "x86_64",
       "profile": "opensuse",
       "iso": {
-        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261117-Media.iso",
-        "size_bytes": 4667211776,
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261118-Media.iso",
+        "size_bytes": 4666163200,
         "checksum": {
           "algo": "sha256",
-          "value": "86665bf5a04aa67c20dca43b0d9a2e757c9f41c890b6d634d7dca7d5a100cc6f"
+          "value": "1d63042cf3390f452f9d6876bb13e84628175e441c5e443420e9a991aeb7e77d"
         },
         "mirrors": [
-          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261117-Media.iso",
-          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261117-Media.iso"
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261118-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261118-Media.iso"
         ]
       },
       "min_size_gib": 30,
@@ -959,21 +872,21 @@
     {
       "id": "opensuse-tumbleweed-kde",
       "name": "openSUSE Tumbleweed",
-      "version": "20261117",
+      "version": "20261118",
       "edition": "Live",
       "desktop": "KDE Plasma",
       "arch": "x86_64",
       "profile": "opensuse",
       "iso": {
-        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261117-Media.iso",
-        "size_bytes": 1300733952,
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261118-Media.iso",
+        "size_bytes": 1300695040,
         "checksum": {
           "algo": "sha256",
-          "value": "c5764421369bcf96ed3f8a3f1f850a34c4b31b55e2d50718fa7d2b16c93478af"
+          "value": "52c46f160b2e60652442363c036ee26b7af8582fa79268ab93e1d558d453a971"
         },
         "mirrors": [
-          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261117-Media.iso",
-          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261117-Media.iso"
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261118-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261118-Media.iso"
         ]
       },
       "min_size_gib": 30,
@@ -995,21 +908,21 @@
     {
       "id": "opensuse-tumbleweed-gnome",
       "name": "openSUSE Tumbleweed",
-      "version": "20261117",
+      "version": "20261118",
       "edition": "Live",
       "desktop": "GNOME",
       "arch": "x86_64",
       "profile": "opensuse",
       "iso": {
-        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261117-Media.iso",
-        "size_bytes": 1304928256,
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261118-Media.iso",
+        "size_bytes": 1304907776,
         "checksum": {
           "algo": "sha256",
-          "value": "8965a2494cfc5359d6290c872054d6fcd61dc5e8443dc2ae4de324f45ffa5c3e"
+          "value": "74dab44ea0338a55a7feef75aeea1ac89c67724c5e213beefb227df32edfffc0"
         },
         "mirrors": [
-          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261117-Media.iso",
-          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261117-Media.iso"
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261118-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261118-Media.iso"
         ]
       },
       "min_size_gib": 30,
