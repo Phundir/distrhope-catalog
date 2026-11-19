@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T19:09:30Z",
+  "updated_at": "2026-11-19T01:27:50Z",
   "distros": [
     {
       "id": "archlinux",
@@ -837,25 +837,25 @@
     {
       "id": "opensuse-tumbleweed",
       "name": "openSUSE Tumbleweed",
-      "version": "20261116",
+      "version": "20261117",
       "edition": "DVD (installeur)",
       "arch": "x86_64",
       "profile": "opensuse",
       "iso": {
-        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261116-Media.iso",
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261117-Media.iso",
         "size_bytes": 4667211776,
         "checksum": {
           "algo": "sha256",
-          "value": "ea297801ccde8eb755eb6dd0855c33f675151925c670e15c3f9974e2ea00296f"
+          "value": "86665bf5a04aa67c20dca43b0d9a2e757c9f41c890b6d634d7dca7d5a100cc6f"
         },
         "mirrors": [
-          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261116-Media.iso",
-          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261116-Media.iso"
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261117-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Snapshot20261117-Media.iso"
         ]
       },
       "min_size_gib": 30,
       "recommended_size_gib": 50,
-      "release_date": "2026-11-16",
+      "release_date": "2026-11-18",
       "homepage": "https://www.opensuse.org",
       "tags": [
         "rolling"
@@ -872,26 +872,26 @@
     {
       "id": "opensuse-tumbleweed-kde",
       "name": "openSUSE Tumbleweed",
-      "version": "20261116",
+      "version": "20261117",
       "edition": "Live",
       "desktop": "KDE Plasma",
       "arch": "x86_64",
       "profile": "opensuse",
       "iso": {
-        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261116-Media.iso",
-        "size_bytes": 1303263232,
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261117-Media.iso",
+        "size_bytes": 1300733952,
         "checksum": {
           "algo": "sha256",
-          "value": "63370b7be0c95a031cfdfab7e27c9077c58a8c8e52ab1a55320f40155a531142"
+          "value": "c5764421369bcf96ed3f8a3f1f850a34c4b31b55e2d50718fa7d2b16c93478af"
         },
         "mirrors": [
-          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261116-Media.iso",
-          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261116-Media.iso"
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261117-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Snapshot20261117-Media.iso"
         ]
       },
       "min_size_gib": 30,
       "recommended_size_gib": 50,
-      "release_date": "2026-11-16",
+      "release_date": "2026-11-18",
       "homepage": "https://www.opensuse.org",
       "tags": [
         "rolling"
@@ -908,26 +908,26 @@
     {
       "id": "opensuse-tumbleweed-gnome",
       "name": "openSUSE Tumbleweed",
-      "version": "20261116",
+      "version": "20261117",
       "edition": "Live",
       "desktop": "GNOME",
       "arch": "x86_64",
       "profile": "opensuse",
       "iso": {
-        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261116-Media.iso",
-        "size_bytes": 1305022464,
+        "url": "https://downloadcontent.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261117-Media.iso",
+        "size_bytes": 1304928256,
         "checksum": {
           "algo": "sha256",
-          "value": "b235c01ae1d85867c51d952608421b86a4e26c5bc4689c39114e4e72b1b7f73e"
+          "value": "8965a2494cfc5359d6290c872054d6fcd61dc5e8443dc2ae4de324f45ffa5c3e"
         },
         "mirrors": [
-          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261116-Media.iso",
-          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261116-Media.iso"
+          "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261117-Media.iso",
+          "https://ftp.fau.de/opensuse/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Snapshot20261117-Media.iso"
         ]
       },
       "min_size_gib": 30,
       "recommended_size_gib": 50,
-      "release_date": "2026-11-16",
+      "release_date": "2026-11-18",
       "homepage": "https://www.opensuse.org",
       "tags": [
         "rolling"
