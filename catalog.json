@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T19:14:06Z",
+  "updated_at": "2026-11-20T01:21:21Z",
   "distros": [
     {
       "id": "archlinux",
@@ -743,6 +743,93 @@
       }
     },
     {
+      "id": "linuxmint-cinnamon",
+      "name": "Linux Mint",
+      "version": "22.3",
+      "edition": "Desktop",
+      "desktop": "Cinnamon",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso",
+        "size_bytes": 3091660800,
+        "checksum": {
+          "algo": "sha256",
+          "value": "a081ab202cfda17f6924128dbd2de8b63518ac0531bcfe3f1a1b88097c459bd4"
+        },
+        "mirrors": [
+          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso",
+          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-cinnamon-64bit.iso"
+        ]
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-01-08",
+      "homepage": "https://linuxmint.com",
+      "tags": [
+        "stable",
+        "beginner"
+      ]
+    },
+    {
+      "id": "linuxmint-mate",
+      "name": "Linux Mint",
+      "version": "22.3",
+      "edition": "Desktop",
+      "desktop": "MATE",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-mate-64bit.iso",
+        "size_bytes": 3134275584,
+        "checksum": {
+          "algo": "sha256",
+          "value": "7609294da613b75eea89bb918292125e9f06418a368136fb190466e15bf8c373"
+        },
+        "mirrors": [
+          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-mate-64bit.iso",
+          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-mate-64bit.iso"
+        ]
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-01-08",
+      "homepage": "https://linuxmint.com",
+      "tags": [
+        "stable",
+        "beginner"
+      ]
+    },
+    {
+      "id": "linuxmint-xfce",
+      "name": "Linux Mint",
+      "version": "22.3",
+      "edition": "Desktop",
+      "desktop": "Xfce",
+      "arch": "x86_64",
+      "profile": "debian",
+      "iso": {
+        "url": "https://mirrors.edge.kernel.org/linuxmint/stable/22.3/linuxmint-22.3-xfce-64bit.iso",
+        "size_bytes": 3033710592,
+        "checksum": {
+          "algo": "sha256",
+          "value": "45a835b5dddaf40e84d776549e0b19b3fbd49673b6cc6434ebddbfcd217df776"
+        },
+        "mirrors": [
+          "https://ftp.fau.de/mint/iso/stable/22.3/linuxmint-22.3-xfce-64bit.iso",
+          "https://mirrors.layeronline.com/linuxmint/stable/22.3/linuxmint-22.3-xfce-64bit.iso"
+        ]
+      },
+      "min_size_gib": 25,
+      "recommended_size_gib": 50,
+      "release_date": "2026-01-08",
+      "homepage": "https://linuxmint.com",
+      "tags": [
+        "stable",
+        "beginner"
+      ]
+    },
+    {
       "id": "popos-intel",
       "name": "Pop!_OS",
       "version": "24.04-20",
@@ -971,22 +1058,22 @@
     {
       "id": "nixos-graphical",
       "name": "NixOS",
-      "version": "26.05.14630.f68407657ad2",
+      "version": "26.05.14753.3457b69ac4ab",
       "edition": "Graphical",
       "desktop": "GNOME / KDE Plasma (au choix)",
       "arch": "x86_64",
       "profile": "nixos",
       "iso": {
-        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.14630.f68407657ad2/nixos-graphical-26.05.14630.f68407657ad2-x86_64-linux.iso",
-        "size_bytes": 3892314112,
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.14753.3457b69ac4ab/nixos-graphical-26.05.14753.3457b69ac4ab-x86_64-linux.iso",
+        "size_bytes": 3888513024,
         "checksum": {
           "algo": "sha256",
-          "value": "d5a7fd9fcacc629e0592f25fd27ac49434cf484248a37f4147c55a9b9bc1f4bf"
+          "value": "b0b55d2061309644d7ce793a2b86f2c6499e7d1c2ff676a7b4e889e4bcd89cec"
         }
       },
       "min_size_gib": 30,
       "recommended_size_gib": 60,
-      "release_date": "2026-11-17",
+      "release_date": "2026-11-19",
       "homepage": "https://nixos.org",
       "tags": [
         "declarative"
