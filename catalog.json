@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T01:27:46Z",
+  "updated_at": "2026-11-23T13:32:46Z",
   "distros": [
     {
       "id": "archlinux",
@@ -1058,22 +1058,22 @@
     {
       "id": "nixos-graphical",
       "name": "NixOS",
-      "version": "26.05.14979.94c3211b0ee8",
+      "version": "26.05.15079.0dc498bfe49b",
       "edition": "Graphical",
       "desktop": "GNOME / KDE Plasma (au choix)",
       "arch": "x86_64",
       "profile": "nixos",
       "iso": {
-        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.14979.94c3211b0ee8/nixos-graphical-26.05.14979.94c3211b0ee8-x86_64-linux.iso",
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.15079.0dc498bfe49b/nixos-graphical-26.05.15079.0dc498bfe49b-x86_64-linux.iso",
         "size_bytes": 3892314112,
         "checksum": {
           "algo": "sha256",
-          "value": "0a61ca7919430bc81481e7a385913da7a2f5d31cec9535f6acaff4982e93f30f"
+          "value": "bb1b2b98901132afb995f1a3f99b1a5f2855d2b13d709e3721de847bdef0239d"
         }
       },
       "min_size_gib": 30,
       "recommended_size_gib": 60,
-      "release_date": "2026-11-21",
+      "release_date": "2026-11-23",
       "homepage": "https://nixos.org",
       "tags": [
         "declarative"
